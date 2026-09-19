@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD131 Country Page - Nigeria information, facts, weather and windchill">
+    <meta name="author" content="Promise Elohor">
+    <title>Nigeria - WDD 131 Country Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+        <div class="hero-container">
+            <picture>
+                <source srcset="images/nigeria-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/nigeria-small.webp" media="(min-width: 500px)">
+                <img src="images/nigeria-small.webp" alt="Aerial view of Lagos Nigeria with Civic Tower and lagoon" class="hero-image" width="1000" height="600">
+            </picture>
+
+            <section class="data-card">
+                <h2>Data</h2>
+                <ul>
+                    <li><span class="label">Area:</span> 923,768 sq km</li>
+                    <li><span class="label">Population:</span> Over 230 million</li>
+                    <li><span class="label">Capital:</span> Abuja</li>
+                    <li><span class="label">Languages:</span> English and many indigenous languages</li>
+                    <li><span class="label">Currency:</span> Nigerian Naira (₦)</li>
+                    <li><span class="label">Time Zone:</span> West Africa Time (WAT)</li>
+                    <li><span class="label">Calling Code:</span> +234</li>
+                    <li><span class="label">Internet TLD:</span> .ng</li>
+                </ul>
+            </section>
+
+            <section class="weather-card">
+                <h2 class="weather-heading">Weather</h2>
+                <img src="images/weather-icon.svg" alt="Partly cloudy weather icon" class="weather-icon" width="60" height="60">
+                <ul>
+                    <li><span class="label">Temperature:</span> <span id="temp">25</span>°C</li>
+                    <li><span class="label">Conditions:</span> Partly Cloudy</li>
+                    <li><span class="label">Wind:</span> <span id="wind">10</span> km/h</li>
+                    <li><span class="label">Wind Chill:</span> <span id="windChill"></span></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> <span class="name">Promise Elohor</span> Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
