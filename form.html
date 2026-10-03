@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 Product Review Form">
+    <meta name="description" content="WDD 131 Product Review Form for submitting and tracking reviews of products, ratings, installation dates, and useful features.">
     <meta name="author" content="Promise Elohor">
     <title>Product Review</title>
     <link rel="stylesheet" href="styles/form.css">
@@ -19,16 +19,17 @@
     <main>
         <form method="get" action="review.html">
 
+            <!-- Product Name -->
             <label for="product">
                 Product Name <span class="required">*</span>
             </label>
 
             <select id="product" name="product" required>
-                <option value="" disabled selected>
-                    Select a Product ...
-                </option>
+                <option value="" disabled selected>Select a Product ...</option>
             </select>
 
+
+            <!-- Overall Rating -->
             <fieldset>
                 <legend>
                     Overall Rating <span class="required">*</span>
@@ -37,59 +38,35 @@
                 <div class="rating">
 
                     <label for="rating1">
-                        <span>☆</span>
-                        <input
-                            type="radio"
-                            id="rating1"
-                            name="rating"
-                            value="1"
-                            required
-                        >
+                        <input type="radio" id="rating1" name="rating" value="1" required>
+                        <span>★</span>
                     </label>
 
                     <label for="rating2">
-                        <span>☆☆</span>
-                        <input
-                            type="radio"
-                            id="rating2"
-                            name="rating"
-                            value="2"
-                        >
+                        <input type="radio" id="rating2" name="rating" value="2" required>
+                        <span>★★</span>
                     </label>
 
                     <label for="rating3">
-                        <span>☆☆☆</span>
-                        <input
-                            type="radio"
-                            id="rating3"
-                            name="rating"
-                            value="3"
-                        >
+                        <input type="radio" id="rating3" name="rating" value="3" required>
+                        <span>★★★</span>
                     </label>
 
                     <label for="rating4">
-                        <span>☆☆☆☆</span>
-                        <input
-                            type="radio"
-                            id="rating4"
-                            name="rating"
-                            value="4"
-                        >
+                        <input type="radio" id="rating4" name="rating" value="4" required>
+                        <span>★★★★</span>
                     </label>
 
                     <label for="rating5">
-                        <span>☆☆☆☆☆</span>
-                        <input
-                            type="radio"
-                            id="rating5"
-                            name="rating"
-                            value="5"
-                        >
+                        <input type="radio" id="rating5" name="rating" value="5" required>
+                        <span>★★★★★</span>
                     </label>
 
                 </div>
             </fieldset>
 
+
+            <!-- Date of Installation -->
             <label for="installDate">
                 Date of Installation <span class="required">*</span>
             </label>
@@ -101,12 +78,10 @@
                 required
             >
 
-            <fieldset>
 
-                <legend>
-                    Which features did you find useful?
-                    <em>(Check all that apply)</em>
-                </legend>
+            <!-- Useful Features -->
+            <fieldset>
+                <legend>Useful Features</legend>
 
                 <label class="checkbox-label" for="durability">
                     <input
@@ -150,6 +125,8 @@
 
             </fieldset>
 
+
+            <!-- Written Review -->
             <label for="writtenReview">
                 Written Review
                 <span class="optional">(Optional)</span>
@@ -158,11 +135,12 @@
             <textarea
                 id="writtenReview"
                 name="writtenReview"
-                rows="7"
             ></textarea>
 
+
+            <!-- User Name -->
             <label for="userName">
-                Your Name
+                User Name
                 <span class="optional">(Optional)</span>
             </label>
 
@@ -172,27 +150,23 @@
                 name="userName"
             >
 
-            <input
-                type="submit"
-                value="Post Review"
-            >
+
+            <!-- Submit -->
+            <input type="submit" value="Post Review">
 
         </form>
     </main>
 
-    <footer>
 
+    <footer>
         <p>
-            &copy;
-            <span id="currentyear"></span>
-            🌸 Promise Elohor 🌸 Nigeria
+            © <span id="currentyear"></span> 🌸 Promise Elohor 🌸 Nigeria
         </p>
 
         <p>
             Last Modification:
             <span id="lastModified"></span>
         </p>
-
     </footer>
 
 </body>
