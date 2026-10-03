@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Product review confirmation page"
+    >
+
+    <meta
+        name="author"
+        content="Promise Elohor"
+    >
+
+    <title>Review Submitted</title>
+
+    <link
+        rel="stylesheet"
+        href="styles/form.css"
+    >
+
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+
+    <main class="confirmation">
+
+        <section>
+
+            <h2>Thank You!</h2>
+
+            <p>
+                Your product review has been successfully submitted.
+            </p>
+
+            <p>
+                You have completed
+                <strong>
+                    <span id="reviewCount"></span>
+                </strong>
+                review(s).
+            </p>
+
+            <a
+                href="form.html"
+                class="button"
+            >
+                Submit Another Review
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            🌸 Promise Elohor 🌸 Nigeria
+        </p>
+
+        <p>
+            Last Modification:
+            <span id="lastModified"></span>
+        </p>
+
+    </footer>
+
+
+    <script>
+
+        let reviewCount =
+            Number(localStorage.getItem("reviewCount")) || 0;
+
+
+        reviewCount++;
+
+
+        localStorage.setItem(
+            "reviewCount",
+            reviewCount
+        );
+
+
+        document.querySelector("#reviewCount").textContent =
+            reviewCount;
+
+
+        document.querySelector("#currentyear").textContent =
+            new Date().getFullYear();
+
+
+        document.querySelector("#lastModified").textContent =
+            document.lastModified;
+
+    </script>
+
+</body>
+</html>

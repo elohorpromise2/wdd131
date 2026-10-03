@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #111;
+}
+
+/* HEADER */
+
+header {
+    background-color: #3c0d68;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* MAIN FORM */
+
+main {
+    max-width: 850px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #eee8ef;
+    border: 1px solid #b7adb9;
+    border-radius: 8px;
+}
+
+form {
+    display: grid;
+    gap: 1.2rem;
+}
+
+/* LABELS */
+
+label,
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* REQUIRED FIELD INDICATOR */
+
+.required {
+    color: #b00020;
+    font-weight: bold;
+}
+
+/* SELECT AND INPUTS */
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #aaa;
+    background-color: white;
+    font-size: 1rem;
+}
+
+select,
+input[type="date"],
+input[type="text"] {
+    min-height: 3.2rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* FIELDSETS */
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+legend em {
+    display: block;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+/* RATING */
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.rating label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.rating span {
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.rating input {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* CHECKBOXES */
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+    font-weight: normal;
+}
+
+.checkbox-label input {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* OPTIONAL TEXT */
+
+.optional {
+    color: #000066;
+    font-weight: normal;
+}
+
+/* SUBMIT BUTTON */
+
+input[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+    background-color: white;
+    color: #111;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3c0d68;
+    color: white;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #3c0d68;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem;
+}
+
+/* REVIEW CONFIRMATION PAGE */
+
+.confirmation {
+    text-align: center;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirmation h2 {
+    font-size: 2rem;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    background-color: #3c0d68;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #260840;
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 768px) {
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    form {
+        gap: 1.5rem;
+    }
+
+    label,
+    legend {
+        font-size: 1.4rem;
+    }
+
+    .rating {
+        justify-content: space-around;
+    }
+
+    .rating span {
+        font-size: 2rem;
+    }
+
+    footer {
+        font-size: 1.1rem;
+    }
+}
