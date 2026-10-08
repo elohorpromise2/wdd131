@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Recommend an affordable Abuja street food and save your favorite foods."
+    >
+
+    <meta name="author" content="Promise Elohor">
+
+    <title>Recommend a Food | Abuja Street Food Explorer</title>
+
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="site-header">
+
+            <a class="logo" href="index.html">
+                Abuja Street Food Explorer
+            </a>
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+            >
+                ☰
+            </button>
+
+            <nav id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Food Gallery</a>
+                <a href="recommend.html" class="active">Recommend</a>
+                <a href="references.html">References</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="welcome">
+            <p class="eyebrow">Share Your Choice</p>
+
+            <h1>Recommend a Food</h1>
+
+            <p>
+                Do you know an affordable street food in Abuja that
+                should be featured? Share it with us.
+            </p>
+        </section>
+
+        <section class="featured">
+
+            <h2>Food Recommendation Form</h2>
+
+            <form id="food-form">
+
+                <div class="form-group">
+                    <label for="food-name">Food name</label>
+
+                    <input
+                        type="text"
+                        id="food-name"
+                        name="food-name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="food-category">Category</label>
+
+                    <select
+                        id="food-category"
+                        name="food-category"
+                        required
+                    >
+                        <option value="">Select a category</option>
+                        <option value="Grilled">Grilled</option>
+                        <option value="Traditional">Traditional</option>
+                        <option value="Dried">Dried</option>
+                        <option value="Snack">Snack</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="food-description">Description</label>
+
+                    <textarea
+                        id="food-description"
+                        name="food-description"
+                        rows="5"
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="food-price">Typical price</label>
+
+                    <input
+                        type="text"
+                        id="food-price"
+                        name="food-price"
+                        placeholder="Example: ₦500–₦1,500"
+                        required
+                    >
+                </div>
+
+                <button class="button" type="submit">
+                    Submit Recommendation
+                </button>
+
+            </form>
+
+            <div id="form-message" aria-live="polite"></div>
+
+        </section>
+
+        <section class="explore">
+
+            <h2>My Favorite Foods</h2>
+
+            <p>
+                Save foods you would like to remember and explore later.
+            </p>
+
+            <div id="favorites-list">
+                <p>No favorite foods saved yet.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Abuja Street Food Explorer | Promise Elohor</p>
+
+        <p>
+            <a href="references.html">References</a>
+        </p>
+    </footer>
+
+</body>
+</html>

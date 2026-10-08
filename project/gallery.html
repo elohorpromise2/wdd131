@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Explore popular and affordable Abuja street foods including suya, masa, kilishi, abacha, and puff-puff."
+    >
+
+    <meta name="author" content="Promise Elohor">
+
+    <title>Food Gallery | Abuja Street Food Explorer</title>
+
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="site-header">
+
+            <a class="logo" href="index.html">
+                Abuja Street Food Explorer
+            </a>
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+            >
+                ☰
+            </button>
+
+            <nav id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="gallery.html" class="active">Food Gallery</a>
+                <a href="recommend.html">Recommend</a>
+                <a href="references.html">References</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="welcome">
+            <p class="eyebrow">Explore Abuja</p>
+
+            <h1>Abuja Food Gallery</h1>
+
+            <p>
+                Discover some of the popular street foods you can enjoy
+                around Abuja without spending too much.
+            </p>
+        </section>
+
+        <section class="featured">
+
+            <h2>Popular Street Foods</h2>
+
+            <div class="filter-buttons">
+                <button type="button" data-category="All">All</button>
+                <button type="button" data-category="Grilled">Grilled</button>
+                <button type="button" data-category="Traditional">Traditional</button>
+                <button type="button" data-category="Dried">Dried</button>
+                <button type="button" data-category="Snack">Snack</button>
+            </div>
+
+            <div class="food-preview">
+
+                <!-- SUYA -->
+                <article class="food-card">
+                    <img
+                        src="images/suya.webp"
+                        alt="Grilled Nigerian suya meat"
+                        loading="lazy"
+                    >
+
+                    <div class="card-content">
+                        <h3>Suya</h3>
+
+                        <p>
+                            Spicy grilled meat served with onions and
+                            other local accompaniments.
+                        </p>
+
+                        <p>
+                            <strong>Typical price:</strong> ₦500–₦2,000
+                        </p>
+
+                        <p>
+                            <strong>Category:</strong> Grilled
+                        </p>
+                    </div>
+
+                    <button
+                        class="favorite-button"
+                        type="button"
+                        data-food="Suya"
+                    >
+                        ❤️ Save Suya
+                    </button>
+                </article>
+
+                <!-- MASA -->
+                <article class="food-card">
+                    <img
+                        src="images/masa.webp"
+                        alt="Nigerian masa rice cakes"
+                        loading="lazy"
+                    >
+
+                    <div class="card-content">
+                        <h3>Masa</h3>
+
+                        <p>
+                            Soft rice cakes that are popular in northern
+                            Nigeria and commonly enjoyed as a snack.
+                        </p>
+
+                        <p>
+                            <strong>Typical price:</strong> ₦300–₦1,000
+                        </p>
+
+                        <p>
+                            <strong>Category:</strong> Traditional
+                        </p>
+                    </div>
+
+                    <button
+                        class="favorite-button"
+                        type="button"
+                        data-food="Masa"
+                    >
+                        ❤️ Save Masa
+                    </button>
+                </article>
+
+                <!-- KILISHI -->
+                <article class="food-card">
+                    <img
+                        src="images/kilishi.webp"
+                        alt="Nigerian kilishi dried meat"
+                        loading="lazy"
+                    >
+
+                    <div class="card-content">
+                        <h3>Kilishi</h3>
+
+                        <p>
+                            Thin, dried and seasoned slices of meat with
+                            a rich spicy flavor.
+                        </p>
+
+                        <p>
+                            <strong>Typical price:</strong> ₦500–₦2,500
+                        </p>
+
+                        <p>
+                            <strong>Category:</strong> Dried
+                        </p>
+                    </div>
+
+                    <button
+                        class="favorite-button"
+                        type="button"
+                        data-food="Kilishi"
+                    >
+                        ❤️ Save Kilishi
+                    </button>
+                </article>
+
+                <!-- ABACHA -->
+                <article class="food-card">
+                    <img
+                        src="images/abacha.webp"
+                        alt="Nigerian abacha African salad"
+                        loading="lazy"
+                    >
+
+                    <div class="card-content">
+                        <h3>Abacha</h3>
+
+                        <p>
+                            African salad made from shredded cassava,
+                            often served with vegetables and local
+                            seasonings.
+                        </p>
+
+                        <p>
+                            <strong>Typical price:</strong> ₦500–₦1,500
+                        </p>
+
+                        <p>
+                            <strong>Category:</strong> Traditional
+                        </p>
+                    </div>
+
+                    <button
+                        class="favorite-button"
+                        type="button"
+                        data-food="Abacha"
+                    >
+                        ❤️ Save Abacha
+                    </button>
+                </article>
+
+                <!-- PUFF-PUFF -->
+                <article class="food-card">
+                    <img
+                        src="images/puff-puff.webp"
+                        alt="Fresh Nigerian puff-puff"
+                        loading="lazy"
+                    >
+
+                    <div class="card-content">
+                        <h3>Puff-Puff</h3>
+
+                        <p>
+                            Small, soft and lightly sweet fried dough
+                            balls that make an affordable snack.
+                        </p>
+
+                        <p>
+                            <strong>Typical price:</strong> ₦100–₦500
+                        </p>
+
+                        <p>
+                            <strong>Category:</strong> Snack
+                        </p>
+                    </div>
+
+                    <button
+                        class="favorite-button"
+                        type="button"
+                        data-food="Puff-Puff"
+                    >
+                        ❤️ Save Puff-Puff
+                    </button>
+                </article>
+
+                <!-- GRILLED FISH -->
+                <article class="food-card">
+                    <img
+                        src="images/grilled-fish.webp"
+                        alt="Nigerian grilled fish"
+                        loading="lazy"
+                    >
+
+                    <div class="card-content">
+                        <h3>Grilled Fish</h3>
+
+                        <p>
+                            Seasoned fish grilled over heat and commonly
+                            enjoyed with onions, pepper, or other sides.
+                        </p>
+
+                        <p>
+                            <strong>Typical price:</strong> ₦2,000–₦5,000
+                        </p>
+
+                        <p>
+                            <strong>Category:</strong> Grilled
+                        </p>
+                    </div>
+
+                    <button
+                        class="favorite-button"
+                        type="button"
+                        data-food="Grilled Fish"
+                    >
+                        ❤️ Save Grilled Fish
+                    </button>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Abuja Street Food Explorer | Promise Elohor</p>
+
+        <p>
+            <a href="references.html">References</a>
+        </p>
+    </footer>
+
+</body>
+</html>

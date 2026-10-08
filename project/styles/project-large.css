@@ -1,0 +1,63 @@
+/* ================================
+   LARGE SCREEN STYLES
+   Abuja Street Food Explorer
+   ================================ */
+
+@media screen and (min-width: 768px) {
+
+    /* HEADER */
+
+    .site-header {
+        padding: 1rem 2rem;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        gap: 0.5rem;
+    }
+
+    /* HERO */
+
+    .hero {
+        min-height: 75vh;
+        padding: 5rem 2rem;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero p {
+        font-size: 1.15rem;
+    }
+
+    /* CONTENT */
+
+    .welcome,
+    .featured,
+    .explore {
+        padding: 4rem 2rem;
+    }
+
+    /* FOOD CARDS */
+
+    .food-preview {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* FEATURE GRID */
+
+    .feature-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .food-card img {
+        height: 240px;
+    }
+}
